@@ -43,7 +43,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    border: 8px solid black;
+    
 }
 
 .about h1, h2 {
@@ -79,12 +79,25 @@ body {
 }
 
 .intro {
-    margin: auto;
-    margin-bottom: 1.5em;
+    
+    
     padding: 1.5;
     border: 8px solid var(--red);
     border-radius: 4px;
     background-color: #F5F9E9;
+}
+
+.me {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    background-color: var(--green);
+}
+.me img {
+    width: 500px;
+    border: 1px solid black;
 }
 
 .card {
