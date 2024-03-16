@@ -1,0 +1,154 @@
+@keyframes arrow {
+    from {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+:root {
+    --white: #F6F7F8;
+    --black: #011627;
+    --red: #FF3366;
+    --red--shadow: #af1f43;
+    --blue: #20A4f3;
+    --green: #2EC4B6;
+
+}
+
+
+body {
+    background-color: var(--black);
+    color: var(--black);
+}
+
+
+
+.about {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.about h1 {
+    color: var(--red);
+    font-size: 3em;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10em;
+    
+}
+
+.about img{
+    width: 450px;
+}
+
+.about .card {
+    border: 4px solid var(--red);
+    border-radius: 4px;
+    margin-bottom: 1.5em;
+}
+
+.about i {
+    color: var(--red);
+    font-size: 3em;
+    animation: arrow 1s infinite;
+}
+
+.intro {
+    margin: auto;
+    margin-bottom: 1.5em;
+    padding: 1.5;
+    border: 8px solid var(--red);
+    border-radius: 4px;
+    background-color: #F5F9E9;
+}
+
+.card {
+    width: 30%;
+    
+    padding: 1.5em;
+   
+}
+.skills {
+    padding: 1em;
+    background-color: var(--red);
+    margin-bottom: 1.5em;
+}
+.icon-container {
+    background-color: var(--red);
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 1.5em;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+    width:20%;
+   
+}
+
+.skill-card i {
+    font-size: 6em;
+    background-color: var(--white);
+    padding: .1em;
+    border: 8px solid var(--black);
+    box-shadow: 3px 3px 4px 2px var(--red--shadow);
+    text-align: center;
+}
+
+.skill-card p {
+    font-size: 1.5em;
+   
+    text-align: center;
+    
+}
+
+.skills p {
+    margin: auto;
+    width: 60%;
+}
+
+.skills .card {
+    border: 8px solid var(--black);
+    margin-bottom: 1.5em;
+    background-color: var(--white);
+    box-shadow: 3px 3px 4px 4px var(--red--shadow);
+}
+
+.experience {
+    background-color: var(--green);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5em;
+
+}
+
+
+
