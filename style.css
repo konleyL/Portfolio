@@ -21,10 +21,12 @@
 :root {
     --white: #F6F7F8;
     --black: #011627;
+    --black--shadow: #000000;
     --red: #FF3366;
     --red--shadow: #af1f43;
     --blue: #20A4f3;
     --green: #2EC4B6;
+    --green--shadow: #1b857abe; 
 
 }
 
@@ -44,9 +46,10 @@ body {
     justify-content: center;
     height: 100vh;
     
+    
 }
 
-.about h1, h2 {
+.about h1, .about h2 {
     color: var(--red);
     font-size: 3em;
 }
@@ -65,7 +68,7 @@ body {
 }
 
 .about .card {
-    border: 4px solid var(--red);
+    
     border-radius: 4px;
     margin-bottom: 1.5em;
 }
@@ -93,36 +96,51 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 1em;
-    background-color: var(--green);
+    background-color: var(--red);
 }
 .me img {
     width: 500px;
     border: 1px solid black;
 }
 
+.intro {
+    box-shadow: 3px 3px 4px 2px var(--red--shadow);
+}
+
 .card {
     width: 30%;
-    
+    border: 8px solid var(--black);
+    background-color: var(--white);
     padding: 1.5em;
    
 }
+
+span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
 .skills {
-    padding: 1em;
-    background-color: var(--red);
-    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--green);
+    
+    
 }
 .icon-container {
-    background-color: var(--red);
     display: flex;
     width: 100%;
     justify-content: space-around;
-    margin-bottom: 1.5em;
+    align-items: center;
+    margin-bottom: 2em;
+    background-color: #011627;
+    padding: 1.5em;
 }
 
 .skill-card {
     display: flex;
+    
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 1.5em;
     width:20%;
@@ -133,38 +151,172 @@ body {
     font-size: 6em;
     background-color: var(--white);
     padding: .1em;
-    border: 8px solid var(--black);
-    box-shadow: 3px 3px 4px 2px var(--red--shadow);
+    margin-bottom: .25em;
+    box-shadow: 3px 3px 4px 2px var(--black--shadow);
+    
+    
     text-align: center;
 }
 
 .skill-card p {
     font-size: 1.5em;
-   
-    text-align: center;
+    color: var(--green);
     
+    text-align: center;
 }
 
 .skills p {
     margin: auto;
-    width: 60%;
+    width: 50%;
+    
+    
 }
 
 .skills .card {
-    border: 8px solid var(--black);
+    
     margin-bottom: 1.5em;
     background-color: var(--white);
-    box-shadow: 3px 3px 4px 2px var(--red--shadow);
+    box-shadow: 3px 3px 4px 2px var(--green--shadow);
+    
+}
+
+.skill-span {
+    font-size: 1em;
+    font-weight: bold;
 }
 
 .experience {
-    background-color: var(--green);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+    
+    
+
+}
+
+
+
+.experience i {
+    background-color: var(--black);
+    width: 100%;
+    text-align: center;
+    font-size: 6em;
+    padding: .5em;
+    color: var(--white);
+}
+
+.experience .card {
+    width: 40%;
+}
+
+.education-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    width: 100%;
+    padding: 4em;
+    background-color: var(--red);
+}
+
+.experience .card {
+    box-shadow: 3px 3px 4px 2px var(--red--shadow);
+}
+
+.experience a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: var(--black);
+    background-color: var(--blue);
+    align-self: self-end;
+    font-weight: bold;
+    padding: 1em;
+    border: 4px solid var(--black);
+}
+
+.experience a:hover {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.experience a:active {
+    background-color: var(--white);
+    color: black;
+}
+
+.projects{
+    display: flex;
+    margin: 5em;
+    justify-content: center;
+}
+
+.goals {
+    padding: 1.5em;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5em;
+    
+}
+
+.goals-container {
+    width: 70%;
+  
+}
+
+.goals-container h2 {
+    margin-bottom: 1em;
+}
+
+.goals-container p {
+    padding: 1.5;
+    width: 60%;
+}
+
+.goals i {
+    font-size: 8em;
+    align-self: center;
+}
+.contact {
+    background-color: var(--red);
+    width: fit-content;
+    margin: auto;
+    font-size: 1.5em;
     padding: 1.5em;
 
 }
+
+.contact p {
+    margin-bottom: 1.5em;
+}
+
+
+.contact-p {
+    
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.contact a {
+    text-decoration: none;
+    padding: 1em;
+    color: var(--black);
+    background-color: var(--blue);
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    width: fit-content;
+    border: 8px solid var(--black);
+}
+
+
+
+
+
+
+
+
 
 
 
