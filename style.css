@@ -12,13 +12,30 @@
   }
 }
 
-@keyframes name {
+@keyframes slide-up {
     from {
-        transform: rotate(0deg);
+        transform: translateY(1000px);
     }
     to {
-        transform: rotate(360deg);
+        transform: translateY(0px);
     }
+}
+
+@keyframes slide-down {
+  from {
+      transform: translateY(-1000px);
+  }
+  to {
+      transform: translateY(0px);
+  }
+}
+
+.slide-up {
+  animation: slide-up 1s ease-in;
+}
+
+.slide-down {
+  animation: slide-down 2s ease-in;
 }
 
 * {
@@ -51,9 +68,7 @@ body {
   height: 100vh;
 }
 
-#name {
-    animation: arrow 1s infinite;
-}
+
 
 .about h1,
 .about h2 {
